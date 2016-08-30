@@ -48,7 +48,7 @@ function onDirectorySelected(files) {
                 var imgbox = document.createElement('div');
                 imgbox.classList.add('img-box');
 
-                // 画像のblob
+                // 画像
                 var img = document.createElement('img');
                 img.src = e.target.result;
                 imgbox.appendChild(img);
@@ -59,7 +59,16 @@ function onDirectorySelected(files) {
                 filenameLabel.innerHTML = file.name;
                 imgbox.appendChild(filenameLabel);
 
+                var sizeLabel = document.createElement('div');
+                sizeLabel.classList.add('information-label');
+                imgbox.appendChild(sizeLabel);
+
                 document.getElementById("images-list-" + foldername).appendChild(imgbox);
+
+                // 直後だと画像サイズ読み取れない場合あり
+                setTimeout(function() {
+                    sizeLabel.innerHTML = String(img.naturalWidth) + " px * " + String(img.naturalHeight) + "px";
+                }, 5);
             };
             reader.readAsDataURL(file);
         }

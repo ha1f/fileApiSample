@@ -20,8 +20,13 @@ body {
     width: 100%;
     display: flex;
     flex-wrap: wrap;
+    align-items: baseline;
 }
 
 .img-box .filename-label {
+    text-align: center;
+}
+
+.img-box .information-label {
     text-align: center;
 }
