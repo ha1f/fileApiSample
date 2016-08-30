@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>ディレクトリから画像読み込み</title>
+    <link rel="stylesheet" type="text/css" href="./style.css">
+</head>
+<body>
+    <div>Chromeのみ対応。ディレクトリから画像読み込み</div>
+    <input  type="file" webkitdirectory directory onChange="onDirectorySelected(this.files)">
+    <div id="images-list" class="images-list"></div>
+    <script src="./source.js"></script>
+</body>
+</html>

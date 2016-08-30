@@ -1,0 +1,27 @@
+body {
+    width: 100%;
+    height: 100%;
+    background-color: #f0ffff;
+}
+
+.images-list {
+    width: 100%;
+}
+
+.folder-box .foldername-label {
+    border-left: solid 8px #0000cd;
+    display: inline-block;
+    font-size: 40px;
+    padding-left: 20px;
+    margin: 20px;
+}
+
+.folder-box .folder-images-list {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.img-box .filename-label {
+    text-align: center;
+}
