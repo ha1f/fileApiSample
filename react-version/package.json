@@ -1,0 +1,33 @@
+{
+  "name": "reactsample",
+  "version": "0.1.0",
+  "description": "description",
+  "scripts": {
+    "build": "browserify --debug --transform babelify js/compoents/App.jsx --outfile bundle.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ha1fha1f/ha1fha1f.github.io.git"
+  },
+  "author": "ha1fha1f",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ha1fha1f/ha1fha1f.github.io/issues"
+  },
+  "homepage": "https://github.com/ha1fha1f/ha1fha1f.github.io#readme",
+  "devDependencies": {
+    "babel-preset-es2015": "^6.9.0",
+    "babel-preset-react": "^6.11.1",
+    "babelify": "^7.3.0",
+    "browserify": "^13.0.1",
+    "gulp": "^3.9.1",
+    "gulp-webserver": "^0.9.1",
+    "react": "^15.3.1",
+    "react-dom": "^15.3.1",
+    "react-redux": "^4.4.5",
+    "redux": "^3.5.2",
+    "redux-devtools": "^3.3.1",
+    "vinyl-source-stream": "^1.1.0"
+  }
+}
